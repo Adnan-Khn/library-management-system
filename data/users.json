@@ -1,0 +1,19 @@
+{"users":
+  [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@gmail.com",
+      "password": "password123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "janesmith@gmail.com",
+      "password": "password456",
+      "role": "user"
+    }
+  ]
+}
+
