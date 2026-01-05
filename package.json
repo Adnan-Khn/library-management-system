@@ -1,0 +1,20 @@
+{
+  "name": "library-management-system",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Adnan-Khn/library-management-system#readme",
+  "bugs": {
+    "url": "https://github.com/Adnan-Khn/library-management-system/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adnan-Khn/library-management-system.git"
+  },
+  "license": "ISC",
+  "author": "Adnan Khan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
