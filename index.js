@@ -1,6 +1,12 @@
 const express = require("express")
+const {users} = require("./data/users.json")
+
+const userRoutes = require("./routes/users")
+const bookRoutes = require("./routes/books")
 
 const app = express();
+app.use(express.json());
+//app.use(express.urlencoded({ extended: true }));
 const PORT = 3000;
 
 app.get("/",(req,res)=>{
@@ -8,6 +14,9 @@ app.get("/",(req,res)=>{
     message: "Library Management System API is running"
   })
 })
+
+app.use("/users",userRoutes)
+app.use("/books",bookRoutes)
 
 app.listen(PORT,()=>{
   console.log(`Server is running on http://localhost:${PORT}`)
