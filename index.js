@@ -1,8 +1,12 @@
 const express = require("express")
+require("dotenv").config();
 const {users} = require("./data/users.json")
 
 const userRoutes = require("./routes/users")
 const bookRoutes = require("./routes/books")
+
+const dbConnection = require("./dbConnection")
+dbConnection();
 
 const app = express();
 app.use(express.json());
